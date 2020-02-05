@@ -15,51 +15,68 @@
 11-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:5:5-24:19
+13-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:5:5-33:19
 14        android:allowBackup="true"
 14-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.1.0] C:\Users\Raul\.gradle\caches\transforms-2\files-2.1\7100859790dd10cdf6a642d546a38fb4\core-1.1.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
-17        android:icon="@drawable/reloj"
-17-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:7:9-39
-18        android:label="@string/app_name"
-18-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:8:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:9:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:10:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:11:9-40
-23        <activity android:name="com.example.mycolas.SplashScreenActivity" >
-23-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:12:9-17:20
-23-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:12:19-55
-24            <intent-filter>
-24-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:13:13-16:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:17-69
-25-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:15:17-77
-27-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:15:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity
-30-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:9-20:20
-31            android:name="com.example.mycolas.MainActivity"
-31-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:19-47
-32            android:parentActivityName="com.example.mycolas.SplashScreenActivity" >
-32-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:19:13-63
-33        </activity>
-34        <activity
-34-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:21:9-23:20
-35            android:name="com.example.mycolas.InsertActivity"
-35-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:21:19-49
-36            android:parentActivityName="com.example.mycolas.MainActivity" >
-36-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:22:13-55
-37        </activity>
-38    </application>
-39
-40</manifest>
+17        android:fullBackupContent="true"
+17-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:11:9-41
+18        android:icon="@drawable/reloj"
+18-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:7:9-39
+19        android:label="@string/app_name"
+19-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:8:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:9:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:10:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:12:9-40
+24        <activity
+24-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:9-20:20
+25            android:name="com.example.mycolas.SplashScreenActivity"
+25-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:19-55
+26            android:theme="@style/SplashTheme" >
+26-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:15:13-47
+27            <intent-filter>
+27-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:16:13-19:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:17:17-69
+28-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:17:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:17-77
+30-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:21:9-26:20
+34            android:name="com.example.mycolas.MainActivity"
+34-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:21:19-47
+35            android:parentActivityName="com.example.mycolas.SplashScreenActivity" >
+35-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:22:13-63
+36            <intent-filter>
+36-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:23:13-25:29
+37                <action android:name="android.intent.action.VIEW" />
+37-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:24:13-65
+37-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:24:21-62
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:27:9-32:20
+41            android:name="com.example.mycolas.InsertActivity"
+41-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:27:19-49
+42            android:parentActivityName="com.example.mycolas.MainActivity" >
+42-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:28:13-55
+43            <intent-filter>
+43-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:23:13-25:29
+44                <action android:name="android.intent.action.VIEW" />
+44-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:24:13-65
+44-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:24:21-62
+45            </intent-filter>
+46        </activity>
+47    </application>
+48
+49</manifest>

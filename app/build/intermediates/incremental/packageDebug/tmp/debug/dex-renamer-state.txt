@@ -1,4 +1,4 @@
-#Wed Feb 05 12:36:24 CET 2020
+#Wed Feb 05 13:05:23 CET 2020
 base.0=C\:\\Users\\Raul\\Downloads\\MyColas\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

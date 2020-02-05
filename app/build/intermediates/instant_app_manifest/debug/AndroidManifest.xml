@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.mycolas.SplashScreenActivity" >
+        <activity
+            android:name="com.example.mycolas.SplashScreenActivity"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
