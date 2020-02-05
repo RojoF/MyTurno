@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mycolas"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:5:5-29:19
+14        android:allowBackup="true"
+14-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\Raul\.gradle\caches\transforms-2\files-2.1\7100859790dd10cdf6a642d546a38fb4\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@drawable/reloj"
+17-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:7:9-39
+18        android:label="@string/app_name"
+18-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:8:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:10:9-35
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.mycolas.SplashScreenActivity" >
+22-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:12:9-17:20
+22-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:12:19-55
+23            <intent-filter>
+23-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:13:13-16:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:17-69
+24-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:15:17-77
+26-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:15:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.mycolas.MainActivity" >
+29-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:9-22:20
+29-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:18:19-47
+30            <intent-filter>
+30-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:19:13-21:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:17-69
+31-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:25-66
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:23:9-28:20
+35            android:name="com.example.mycolas.InsertActivity"
+35-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:23:19-49
+36            android:parentActivityName="com.example.mycolas.MainActivity" >
+36-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:24:13-55
+37            <intent-filter>
+37-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:19:13-21:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:17-69
+38-->C:\Users\Raul\Downloads\MyColas\app\src\main\AndroidManifest.xml:14:25-66
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

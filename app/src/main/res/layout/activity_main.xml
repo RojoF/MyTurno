@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Parte superior -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cabecera"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/cola" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cabecera"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:longClickable="false"
+            android:onClick="onClickFab"
+            fab:srcCompat="@mipmap/accountsearch" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sixty"
+            android:text="Version Beta 1.0 de la app Mi turno"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="252dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/sixty"
+            android:text="*Para empezar pulsa el boton de busqueda de tu ticket*"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+    <!-- Datos de la meta -->
+
+
+</LinearLayout>
