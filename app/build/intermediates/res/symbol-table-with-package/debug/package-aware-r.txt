@@ -1083,6 +1083,7 @@ drawable tooltip_frame_light
 font sixty
 id ALT
 id CTRL
+id Cartelera
 id FUNCTION
 id Fab
 id META
@@ -1179,7 +1180,6 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id editText2
 id edit_query
 id end
 id enterAlways
@@ -1187,12 +1187,12 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabs
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
 id fixed
-id floatingActionButton
 id forever
 id ghost_view
 id gone
@@ -1222,6 +1222,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id nTurno
 id navigation_header_container
 id never
 id none
@@ -1302,7 +1303,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
 id textView3
 id text_input_password_toggle
 id textinput_counter
@@ -1448,6 +1448,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cabezera
 string character_counter_content_description
 string character_counter_pattern
 string define_FloatingActionButton

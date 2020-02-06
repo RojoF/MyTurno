@@ -43,21 +43,21 @@ public final class R {
         private id() {}
 
         public static final int mini = 0x7f090089;
-        public static final int normal = 0x7f090090;
+        public static final int normal = 0x7f090091;
     }
     public static final class string {
         private string() {}
 
-        public static final int define_FloatingActionButton = 0x7f0e0020;
-        public static final int library_FloatingActionButton_author = 0x7f0e0024;
-        public static final int library_FloatingActionButton_authorWebsite = 0x7f0e0025;
-        public static final int library_FloatingActionButton_isOpenSource = 0x7f0e0026;
-        public static final int library_FloatingActionButton_libraryDescription = 0x7f0e0027;
-        public static final int library_FloatingActionButton_libraryName = 0x7f0e0028;
-        public static final int library_FloatingActionButton_libraryVersion = 0x7f0e0029;
-        public static final int library_FloatingActionButton_libraryWebsite = 0x7f0e002a;
-        public static final int library_FloatingActionButton_licenseId = 0x7f0e002b;
-        public static final int library_FloatingActionButton_repositoryLink = 0x7f0e002c;
+        public static final int define_FloatingActionButton = 0x7f0e0021;
+        public static final int library_FloatingActionButton_author = 0x7f0e0025;
+        public static final int library_FloatingActionButton_authorWebsite = 0x7f0e0026;
+        public static final int library_FloatingActionButton_isOpenSource = 0x7f0e0027;
+        public static final int library_FloatingActionButton_libraryDescription = 0x7f0e0028;
+        public static final int library_FloatingActionButton_libraryName = 0x7f0e0029;
+        public static final int library_FloatingActionButton_libraryVersion = 0x7f0e002a;
+        public static final int library_FloatingActionButton_libraryWebsite = 0x7f0e002b;
+        public static final int library_FloatingActionButton_licenseId = 0x7f0e002c;
+        public static final int library_FloatingActionButton_repositoryLink = 0x7f0e002d;
     }
     public static final class styleable {
         private styleable() {}

@@ -26,16 +26,14 @@
             android:name="com.example.mycolas.SplashScreenActivity"
             android:theme="@style/SplashTheme" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.mycolas.MainActivity"
-            android:parentActivityName="com.example.mycolas.SplashScreenActivity" >
+        <activity android:name="com.example.mycolas.MainActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
