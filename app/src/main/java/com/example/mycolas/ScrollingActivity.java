@@ -16,27 +16,28 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-
 public class ScrollingActivity extends AppCompatActivity {
     private TextView mJsonTxtView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mJsonTxtView = findViewById(R.id.listTurno);
         getPosts();
     }
 
-
+    // Metodo para obtener los campos
     private void getPosts(){
 
         Retrofit retrofit = new Retrofit.Builder()
+                // Establecemos la base URL para la API REST
                 .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
+        // Se crea el objeto de tipo JsonApi y llamamos al interfaz de java
         JsonApi jsonApi = retrofit.create(JsonApi.class);
 
         Call<List<Posts>> call = jsonApi.getPosts();
@@ -45,6 +46,7 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onResponse(@NonNull Call<List<Posts>> call,@NonNull Response<List<Posts>> response) {
 
+                // Condicion para que si no hay respuesta enviar mensaje de Error
                 if(!response.isSuccessful()){
                     mJsonTxtView.setText("Codigo: "+response.code());
                     return;
@@ -52,18 +54,17 @@ public class ScrollingActivity extends AppCompatActivity {
 
                 List<Posts> postsList = response.body();
 
-
+                // Bucle para pintar los campos en el textView
                 for(@Nullable Posts post: postsList){
                     String content = "";
                     content += "userId:"+ post.getUserId() + "\n";
-                    content += "id:"+ post.getId() + "\n"+"----------------------------"+"\n";
+                    content += "id:"+ post.getId() +
+                            "\n"+"----------------------------------------"+"\n";
                     //content += "title:"+ post.getTitle() + "\n";
                     //content += "body:"+ post.getBody() + "\n\n";
                     mJsonTxtView.append(content);
 
                 }
-
-
             }
 
             @Override
@@ -72,7 +73,6 @@ public class ScrollingActivity extends AppCompatActivity {
 
             }
         });
-
     }
 }
 

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Mi Turno</string>
-    <string name="cabezera">Introduce Tu Num de Prioridad</string>
+    <string name="cabezera">Introduce Tu Num de Prioridad de Cola</string>
     <string name="action_settings">Settings</string>
 </resources>

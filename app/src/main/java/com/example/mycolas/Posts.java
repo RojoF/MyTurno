@@ -2,12 +2,12 @@ package com.example.mycolas;
 
 class Posts {
 
+    //Declaramos los setters and getters  de las variables que queremos cojer del webService
+
     private int userId;
     private int id;
-    private String title;
-    private String body;
 
-
+    // Anotacion @SupressWarnigs para evitar el warning private-package
     @SuppressWarnings("WeakerAccess")
     public int getUserId() {
         return userId;
@@ -25,11 +25,4 @@ class Posts {
         this.id = id;
     }
 
-    //public String getTitle() {
-    // return title;
-    //}
-
-    //public String getBody() {
-    // return body;
-    //}
 }

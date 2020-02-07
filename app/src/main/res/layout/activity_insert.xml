@@ -52,6 +52,7 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="onClickfabs"
+            android:visibility="visible"
             app:srcCompat="@mipmap/accountsearch" />
 
     </RelativeLayout>

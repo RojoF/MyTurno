@@ -16,6 +16,7 @@ import android.view.WindowManager;
 
 public class SplashScreenActivity extends Activity {
 
+            // Clase para realizar un Splash cuando se inicia la app
             //Duración del splash
             private static final long SPLASH_SCREEN_DELAY = 3000;
 

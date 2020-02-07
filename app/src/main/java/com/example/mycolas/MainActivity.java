@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // Metodo OnCLick Listener para cuando se pulsa boton enlazar con otra activity
     public void onClickFab (View v) {
         Intent intent = new Intent(this, InsertActivity.class);
         startActivity(intent);

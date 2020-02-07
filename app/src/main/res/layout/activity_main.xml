@@ -26,9 +26,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/cabecera"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="-24dp"
+            android:layout_marginTop="-27dp"
             android:layout_marginBottom="5dp"
             android:clickable="true"
+            android:focusable="true"
             android:longClickable="false"
             android:onClick="onClickFab"
             fab:srcCompat="@mipmap/accountsearch" />
