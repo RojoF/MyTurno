@@ -3,6 +3,8 @@ package com.example.mycolas;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -41,7 +43,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
         call.enqueue(new Callback<List<Posts>>() {
             @Override
-            public void onResponse(Call<List<Posts>> call, Response<List<Posts>> response) {
+            public void onResponse(@NonNull Call<List<Posts>> call,@NonNull Response<List<Posts>> response) {
 
                 if(!response.isSuccessful()){
                     mJsonTxtView.setText("Codigo: "+response.code());
@@ -50,7 +52,8 @@ public class ScrollingActivity extends AppCompatActivity {
 
                 List<Posts> postsList = response.body();
 
-                for(Posts post: postsList){
+
+                for(@Nullable Posts post: postsList){
                     String content = "";
                     content += "userId:"+ post.getUserId() + "\n";
                     content += "id:"+ post.getId() + "\n"+"----------------------------"+"\n";
@@ -64,7 +67,7 @@ public class ScrollingActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Posts>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Posts>> call,@NonNull Throwable t) {
                 mJsonTxtView.setText(t.getMessage());
 
             }

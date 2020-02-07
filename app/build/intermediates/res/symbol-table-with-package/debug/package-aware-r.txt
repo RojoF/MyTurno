@@ -804,6 +804,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen app_bar_height
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -861,6 +862,7 @@ dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fab_elevation_lollipop
+dimen fab_margin
 dimen fab_scroll_threshold
 dimen fab_shadow_size
 dimen fab_size_mini
@@ -941,6 +943,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1056,6 +1059,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable fab_shadow
 drawable fab_shadow_mini
+drawable hospital
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1138,6 +1142,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1145,6 +1150,7 @@ id add
 id alertTitle
 id all
 id always
+id app_bar
 id async
 id auto
 id barrier
@@ -1214,6 +1220,7 @@ id left
 id line1
 id line3
 id listMode
+id listTurno
 id list_item
 id masked
 id message
@@ -1312,6 +1319,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
+id toolbar_layout
 id top
 id topPanel
 id touch_outside
@@ -1386,6 +1395,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_insert
 layout activity_main
+layout activity_scrolling
+layout content_scrolling
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1414,6 +1425,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout splash
 layout support_simple_spinner_dropdown_item
+menu menu_scrolling
 mipmap accountsearch
 mipmap cola
 mipmap ic_launcher
@@ -1445,6 +1457,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1479,6 +1492,9 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_AppBarOverlay
+style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
