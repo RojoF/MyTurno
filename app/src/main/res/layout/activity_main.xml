@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <!-- Parte superior -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:fontFamily="@font/sixty"
-            android:text="Version Beta 1.0 de la app Mi turno"
+            android:text="Version Beta de la app Mi turno"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -50,7 +51,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="43dp"
             android:fontFamily="@font/sixty"
-            android:text="*Para empezar pulsa el boton de busqueda de tu ticket*"
+            android:text="*Para empezar pulsa el boton para saber el turno actual de tu cola*"
             android:textColor="#212121"
             android:textSize="18sp"
             android:textStyle="italic" />

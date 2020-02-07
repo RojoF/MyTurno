@@ -1,6 +1,8 @@
 package com.example.mycolas;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,4 +15,8 @@ public class InsertActivity extends AppCompatActivity {
 
     }
 
+    public void onClickfabs (View v) {
+        Intent intent = new Intent(this, ScrollingActivity.class);
+        startActivity(intent);
+    }
 }

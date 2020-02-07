@@ -9,6 +9,7 @@
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -40,6 +41,14 @@
             android:parentActivityName="com.example.mycolas.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mycolas.ScrollingActivity"
+            android:parentActivityName="com.example.mycolas.InsertActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
     </application>

@@ -31,9 +31,10 @@
             android:layout_marginTop="100dp"
             android:background="@drawable/rounded_edittext"
             android:ems="10"
+            android:hint="1-4"
+            android:maxLength="1"
             android:inputType="number"
             android:textAlignment="center"
-            android:fontFamily="@font/sixty"
             android:textColorHighlight="#9A050207"
             android:textColorLink="#212121"
             android:textSize="50sp"
@@ -48,8 +49,9 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="5dp"
-            android:focusable="true"
             android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClickfabs"
             app:srcCompat="@mipmap/accountsearch" />
 
     </RelativeLayout>
