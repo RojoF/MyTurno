@@ -36,14 +36,14 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int fab_shadow = 0x7f070070;
-        public static final int fab_shadow_mini = 0x7f070071;
+        public static final int fab_shadow = 0x7f070071;
+        public static final int fab_shadow_mini = 0x7f070072;
     }
     public static final class id {
         private id() {}
 
-        public static final int mini = 0x7f09008c;
-        public static final int normal = 0x7f090094;
+        public static final int mini = 0x7f09008d;
+        public static final int normal = 0x7f090095;
     }
     public static final class string {
         private string() {}

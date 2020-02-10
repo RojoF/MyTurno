@@ -34,28 +34,44 @@
             android:onClick="onClickFab"
             fab:srcCompat="@mipmap/accountsearch" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="283dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/sixty"
-            android:text="Version Beta de la app Mi turno"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="531dp"
+            android:layout_marginTop="200dp">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="252dp"
-            android:layout_height="69dp"
-            android:layout_below="@+id/textView"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="43dp"
-            android:fontFamily="@font/sixty"
-            android:text="*Para empezar pulsa el boton para saber el turno actual de tu cola*"
-            android:textColor="#212121"
-            android:textSize="18sp"
-            android:textStyle="italic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="283dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sixty"
+                    android:text="@string/beta"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="43dp"
+                    android:fontFamily="@font/sixty"
+                    android:gravity="center"
+                    android:text="@string/version"
+                    android:textColor="#212121"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <CalendarView
+                    android:id="@+id/calendarView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
 
 
     </RelativeLayout>

@@ -3,4 +3,7 @@
     <string name="cabezera">Introduce Tu Num de Prioridad de Cola</string>
     <string name="action_settings">Settings</string>
     <string name="notification">Introduce Texto para continuar</string>
+    <string name="version">*Para empezar pulsa el boton para saber el turno actual de tu cola*</string>
+    <string name="beta">Version Beta de la app Mi turno</string>
+
 </resources>

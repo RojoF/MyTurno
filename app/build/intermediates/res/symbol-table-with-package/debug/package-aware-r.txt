@@ -1042,6 +1042,7 @@ drawable accountsearch
 drawable aduxia
 drawable avd_hide_password
 drawable avd_show_password
+drawable borde_redondo
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1157,8 +1158,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnBuscar
 id buttonPanel
 id cabecera
+id calendarView7
 id center
 id center_horizontal
 id center_vertical
@@ -1193,7 +1196,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fabs
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1478,6 +1480,7 @@ string library_FloatingActionButton_libraryWebsite
 string library_FloatingActionButton_licenseId
 string library_FloatingActionButton_repositoryLink
 string mtrl_chip_close_icon_content_description
+string notification
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
