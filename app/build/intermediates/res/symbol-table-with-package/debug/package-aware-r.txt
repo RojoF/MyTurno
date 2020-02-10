@@ -1051,6 +1051,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable check
 drawable cola
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
