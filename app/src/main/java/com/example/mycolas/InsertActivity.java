@@ -9,8 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 public class InsertActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE ="" ;
@@ -24,7 +22,6 @@ public class InsertActivity extends AppCompatActivity {
         textTurno = (EditText) findViewById(R.id.nTurno);
 
     }
-
 
     public void onClickbtnRedondo(View v) {
         int a = 0;
@@ -41,7 +38,6 @@ public class InsertActivity extends AppCompatActivity {
 
             // Si esta vacío lanza notificacion Toast con un @String
             Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.notification), Toast.LENGTH_LONG);
-
             toast1.show();
         }
     }
