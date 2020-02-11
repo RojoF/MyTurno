@@ -1051,6 +1051,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable check
 drawable cola
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1068,6 +1069,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
+drawable myrect
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1161,7 +1163,7 @@ id bottom
 id btnBuscar
 id buttonPanel
 id cabecera
-id calendarView7
+id calendar
 id center
 id center_horizontal
 id center_vertical
@@ -1462,6 +1464,7 @@ string abc_toolbar_collapse_description
 string action_settings
 string app_name
 string appbar_scrolling_view_behavior
+string beta
 string bottom_sheet_behavior
 string cabezera
 string character_counter_content_description
@@ -1488,6 +1491,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string version
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

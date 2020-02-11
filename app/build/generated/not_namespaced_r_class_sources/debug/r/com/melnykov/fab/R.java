@@ -36,8 +36,8 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int fab_shadow = 0x7f070071;
-        public static final int fab_shadow_mini = 0x7f070072;
+        public static final int fab_shadow = 0x7f070072;
+        public static final int fab_shadow_mini = 0x7f070073;
     }
     public static final class id {
         private id() {}
@@ -48,16 +48,16 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int define_FloatingActionButton = 0x7f0f0022;
-        public static final int library_FloatingActionButton_author = 0x7f0f0026;
-        public static final int library_FloatingActionButton_authorWebsite = 0x7f0f0027;
-        public static final int library_FloatingActionButton_isOpenSource = 0x7f0f0028;
-        public static final int library_FloatingActionButton_libraryDescription = 0x7f0f0029;
-        public static final int library_FloatingActionButton_libraryName = 0x7f0f002a;
-        public static final int library_FloatingActionButton_libraryVersion = 0x7f0f002b;
-        public static final int library_FloatingActionButton_libraryWebsite = 0x7f0f002c;
-        public static final int library_FloatingActionButton_licenseId = 0x7f0f002d;
-        public static final int library_FloatingActionButton_repositoryLink = 0x7f0f002e;
+        public static final int define_FloatingActionButton = 0x7f0f0023;
+        public static final int library_FloatingActionButton_author = 0x7f0f0027;
+        public static final int library_FloatingActionButton_authorWebsite = 0x7f0f0028;
+        public static final int library_FloatingActionButton_isOpenSource = 0x7f0f0029;
+        public static final int library_FloatingActionButton_libraryDescription = 0x7f0f002a;
+        public static final int library_FloatingActionButton_libraryName = 0x7f0f002b;
+        public static final int library_FloatingActionButton_libraryVersion = 0x7f0f002c;
+        public static final int library_FloatingActionButton_libraryWebsite = 0x7f0f002d;
+        public static final int library_FloatingActionButton_licenseId = 0x7f0f002e;
+        public static final int library_FloatingActionButton_repositoryLink = 0x7f0f002f;
     }
     public static final class styleable {
         private styleable() {}
