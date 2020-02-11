@@ -9,8 +9,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class InsertActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE ="" ;
     Button btnOk;
     EditText textTurno;
     @Override
@@ -30,6 +33,8 @@ public class InsertActivity extends AppCompatActivity {
             a = Integer.valueOf(textTurno.getText().toString());
 
             Intent intent = new Intent(this, ScrollingActivity.class);
+            String message = textTurno.getText().toString();
+            intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
         else {

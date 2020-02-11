@@ -61,6 +61,7 @@
                     android:layout_marginTop="43dp"
                     android:fontFamily="@font/sixty"
                     android:gravity="center"
+                    android:padding="10dp"
                     android:text="@string/version"
                     android:textColor="#212121"
                     android:textSize="18sp"
@@ -69,7 +70,8 @@
                 <CalendarView
                     android:id="@+id/calendarView7"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp" />
             </LinearLayout>
         </ScrollView>
 

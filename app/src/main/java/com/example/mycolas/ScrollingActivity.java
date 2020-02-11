@@ -1,20 +1,19 @@
 package com.example.mycolas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class ScrollingActivity extends AppCompatActivity {
     private TextView mJsonTxtView;
@@ -53,6 +52,11 @@ public class ScrollingActivity extends AppCompatActivity {
                 }
 
                 List<Posts> postsList = response.body();
+                Intent intent = getIntent();
+                String message = intent.getStringExtra(InsertActivity.EXTRA_MESSAGE);
+                mJsonTxtView.append("Número de Prioridad cola introducido: "+message+"\n"+"" +
+                        "-------------------------------------\n");
+                int mes = Integer.parseInt(message);
 
                 // Bucle para pintar los campos en el textView
                 for(@Nullable Posts post: postsList){
@@ -60,9 +64,13 @@ public class ScrollingActivity extends AppCompatActivity {
                     content += "userId:"+ post.getUserId() + "\n";
                     content += "id:"+ post.getId() +
                             "\n"+"----------------------------------------"+"\n";
+
+
+                    //Mas campos de la BBDD o servidor
                     //content += "title:"+ post.getTitle() + "\n";
                     //content += "body:"+ post.getBody() + "\n\n";
-                    mJsonTxtView.append(content);
+                    if (mes == post.getUserId()){
+                    mJsonTxtView.append(content);}
 
                 }
             }
