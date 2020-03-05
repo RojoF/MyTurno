@@ -1,4 +1,4 @@
-#Tue Feb 11 11:53:02 CET 2020
+#Thu Mar 05 11:48:43 CET 2020
 base.0=C\:\\Users\\aduxia\\Downloads\\Proyectos\\MyTurno\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

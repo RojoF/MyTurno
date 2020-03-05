@@ -4,37 +4,66 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+import com.jaredrummler.materialspinner.MaterialSpinner;
+
 public class InsertActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE ="" ;
+    public static final String EXTRA_MESSAGE = "";
+    private static final String[] COLAS = {
+            "1.- Cola Prioridad Nº 1 - Urgencias",
+            "2.- Cola Prioridad Nº 2 - Visitas Programadas",
+            "3.- Cola Prioridad Nº 3 - Radiología",
+            "4.- Cola Prioridad Nº 4 - Consultas"
+
+    };
     Button btnOk;
-    EditText textTurno;
+    int spin_uno = -1;
+    MaterialSpinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
         btnOk = (Button) findViewById(R.id.btnBuscar);
-        textTurno = (EditText) findViewById(R.id.nTurno);
+        spinner = findViewById(R.id.spin);
+        spinner.setItems(COLAS);
+
+        spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
+
+            @Override
+            public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+                Snackbar.make(view, getString(R.string.seleccion_spin) + item, Snackbar.LENGTH_LONG).show();
+                spin_uno = position;
+            }
+        });
+
+        spinner.setOnNothingSelectedListener(new MaterialSpinner.OnNothingSelectedListener() {
+
+            @Override
+            public void onNothingSelected(MaterialSpinner spinner) {
+                Snackbar.make(spinner, getString(R.string.seleccion_spin_dos), Snackbar.LENGTH_LONG).show();
+            }
+        });
 
     }
 
     public void onClickbtnRedondo(View v) {
-        int a = 0;
-        //Comprobamos que no estén vacios sino lo esta continua con la siguiente activity
-        if (textTurno.getText().toString().trim().length() > 0) {
-            a = Integer.valueOf(textTurno.getText().toString());
 
+        //Comprobamos que no estén vacios sino lo esta continua con la siguiente activity
+
+        if (spin_uno >= 0) {
             Intent intent = new Intent(this, ScrollingActivity.class);
-            String message = textTurno.getText().toString();
-            intent.putExtra(EXTRA_MESSAGE, message);
+            String message = spinner.getText().toString();
+            char valor = spinner.getText().charAt(0);
+            int num = Integer.valueOf(valor);
+            intent.putExtra(EXTRA_MESSAGE, num);
             startActivity(intent);
-        }
-        else {
+        } else {
 
             // Si esta vacío lanza notificacion Toast con un @String
             Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.notification), Toast.LENGTH_LONG);
