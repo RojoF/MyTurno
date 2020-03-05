@@ -6,97 +6,96 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml
+8-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml
+9-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:5:5-79
-12-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:5:22-76
+12-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:5:22-76
 13
 14    <application
-14-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:6:5-42:19
+14-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:6:5-42:19
 15        android:allowBackup="true"
-15-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:7:9-35
+15-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:7:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] C:\Users\aduxia\.gradle\caches\transforms-2\files-2.1\7100859790dd10cdf6a642d546a38fb4\core-1.1.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.1.0] C:\Users\Raul\.gradle\caches\transforms-2\files-2.1\7100859790dd10cdf6a642d546a38fb4\core-1.1.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:fullBackupContent="true"
-18-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:12:9-41
+18-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:12:9-41
 19        android:icon="@drawable/reloj"
-19-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:8:9-39
+19-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:8:9-39
 20        android:label="@string/app_name"
-20-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:9:9-41
+20-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:9:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:10:9-54
+21-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:10:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:11:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme" >
-24-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:13:9-40
-25        <activity
-25-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:15:9-21:20
-26            android:name="com.example.mycolas.SplashScreenActivity"
-26-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:15:19-55
-27            android:theme="@style/SplashTheme" >
-27-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:16:13-47
-28            <intent-filter>
-28-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:17:13-20:29
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:18:17-76
-29-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:18:27-74
-30
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
-31-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
-32            </intent-filter>
-33        </activity>
-34        <activity
-34-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:22:9-27:20
-35            android:name="com.example.mycolas.MainActivity"
-35-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:22:19-47
-36            android:screenOrientation="portrait" >
-36-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:23:13-49
-37            <intent-filter>
-37-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:24:13-26:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
-38-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
-39            </intent-filter>
-40        </activity>
-41        <activity
-41-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:28:9-34:20
-42            android:name="com.example.mycolas.InsertActivity"
-42-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:28:19-49
-43            android:parentActivityName="com.example.mycolas.MainActivity"
-43-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:29:13-55
-44            android:screenOrientation="portrait" >
-44-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:30:13-49
-45            <intent-filter>
-45-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:31:13-33:29
-46                <action android:name="android.intent.action.VIEW" />
-46-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:32:17-69
-46-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:32:25-66
-47            </intent-filter>
-48        </activity>
-49        <activity
-49-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:35:9-41:20
-50            android:name="com.example.mycolas.ScrollingActivity"
-50-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:35:19-52
-51            android:parentActivityName="com.example.mycolas.InsertActivity"
-51-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:36:13-57
-52            android:theme="@style/AppTheme.NoActionBar" >
-52-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:37:13-56
-53            <intent-filter>
-53-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:24:13-26:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
-54-->C:\Users\aduxia\Downloads\Proyectos\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
-55            </intent-filter>
-56        </activity>
-57    </application>
-58
-59</manifest>
+22-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:11:9-35
+23        android:theme="@style/AppTheme" >
+23-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:13:9-40
+24        <activity
+24-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:15:9-21:20
+25            android:name="com.example.mycolas.SplashScreenActivity"
+25-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:15:19-55
+26            android:theme="@style/SplashTheme" >
+26-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:16:13-47
+27            <intent-filter>
+27-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:17:13-20:29
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:18:17-76
+28-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:18:27-74
+29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
+30-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:22:9-27:20
+34            android:name="com.example.mycolas.MainActivity"
+34-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:22:19-47
+35            android:screenOrientation="portrait" >
+35-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:23:13-49
+36            <intent-filter>
+36-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:24:13-26:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
+37-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:28:9-34:20
+41            android:name="com.example.mycolas.InsertActivity"
+41-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:28:19-49
+42            android:parentActivityName="com.example.mycolas.MainActivity"
+42-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:29:13-55
+43            android:screenOrientation="portrait" >
+43-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:30:13-49
+44            <intent-filter>
+44-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:31:13-33:29
+45                <action android:name="android.intent.action.VIEW" />
+45-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:32:17-69
+45-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:32:25-66
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:35:9-41:20
+49            android:name="com.example.mycolas.ScrollingActivity"
+49-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:35:19-52
+50            android:parentActivityName="com.example.mycolas.InsertActivity"
+50-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:36:13-57
+51            android:theme="@style/AppTheme.NoActionBar" >
+51-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:37:13-56
+52            <intent-filter>
+52-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:24:13-26:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:17-69
+53-->C:\Users\Raul\Downloads\MyTurno\app\src\main\AndroidManifest.xml:19:25-66
+54            </intent-filter>
+55        </activity>
+56    </application>
+57
+58</manifest>
