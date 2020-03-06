@@ -27,6 +27,7 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim imagen_click
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -413,6 +414,23 @@ attr maxButtonHeight
 attr maxImageSize
 attr measureWithLargestChild
 attr menu
+attr ms_arrow_tint
+attr ms_background_color
+attr ms_background_selector
+attr ms_dropdown_height
+attr ms_dropdown_max_height
+attr ms_hide_arrow
+attr ms_hint
+attr ms_hint_color
+attr ms_padding_bottom
+attr ms_padding_left
+attr ms_padding_right
+attr ms_padding_top
+attr ms_popup_padding_bottom
+attr ms_popup_padding_left
+attr ms_popup_padding_right
+attr ms_popup_padding_top
+attr ms_text_color
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -880,6 +898,11 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen ms__item_height
+dimen ms__padding_left
+dimen ms__padding_top
+dimen ms__popup_padding_left
+dimen ms__popup_padding_top
 dimen mtrl_bottomappbar_fabOffsetEndMode
 dimen mtrl_bottomappbar_fab_cradle_margin
 dimen mtrl_bottomappbar_fab_cradle_rounded_corner_radius
@@ -1043,6 +1066,7 @@ drawable aduxia
 drawable avd_hide_password
 drawable avd_show_password
 drawable borde_redondo
+drawable border
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1067,6 +1091,12 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ms__arrow
+drawable ms__drawable
+drawable ms__drop_down_shadow
+drawable ms__menu_down
+drawable ms__selector
+drawable ms__shadow_background
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable myrect
@@ -1085,17 +1115,21 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable reloj
 drawable rounded_edittext
+drawable ruta
+drawable ruta_beta
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font lemon_milk
 font sixty
 id ALT
 id CTRL
 id Cartelera
 id FUNCTION
-id Fab
 id META
+id Rutabtn
 id SHIFT
 id SYM
+id Turnobtn
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1145,7 +1179,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1162,8 +1195,6 @@ id blocking
 id bottom
 id btnBuscar
 id buttonPanel
-id cabecera
-id calendar
 id center
 id center_horizontal
 id center_vertical
@@ -1200,6 +1231,7 @@ id expand_activities_button
 id expanded_menu
 id fill
 id fill_horizontal
+id fill_parent
 id fill_vertical
 id filled
 id fixed
@@ -1227,13 +1259,13 @@ id listMode
 id listTurno
 id list_item
 id masked
+id match_parent
 id message
 id middle
 id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id nTurno
 id navigation_header_container
 id never
 id none
@@ -1288,6 +1320,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spin
 id split_action_bar
 id spread
 id spread_inside
@@ -1314,7 +1347,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView3
+id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1333,6 +1366,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_tinted_spinner
 id unchecked
 id uniform
 id unlabeled
@@ -1416,6 +1450,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout ms__list_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1429,7 +1464,6 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout splash
 layout support_simple_spinner_dropdown_item
-menu menu_scrolling
 mipmap accountsearch
 mipmap cola
 mipmap ic_launcher
@@ -1490,6 +1524,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string seleccion_spin
+string seleccion_spin_dos
 string status_bar_notification_info_overflow
 string version
 style AlertDialog_AppCompat
@@ -2047,6 +2083,7 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
+styleable MaterialSpinner ms_arrow_tint ms_background_color ms_background_selector ms_dropdown_height ms_dropdown_max_height ms_hide_arrow ms_hint ms_hint_color ms_padding_bottom ms_padding_left ms_padding_right ms_padding_top ms_popup_padding_bottom ms_popup_padding_left ms_popup_padding_right ms_popup_padding_top ms_text_color
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
