@@ -15,10 +15,10 @@ public class InsertActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "";
     private static final String[] COLAS = {
-            "1.- Cola Prioridad Nº 1 - Urgencias",
-            "2.- Cola Prioridad Nº 2 - Visitas Programadas",
-            "3.- Cola Prioridad Nº 3 - Radiología",
-            "4.- Cola Prioridad Nº 4 - Consultas"
+            "1",
+            "2",
+            "3",
+            "4"
 
     };
     Button btnOk;
@@ -58,10 +58,10 @@ public class InsertActivity extends AppCompatActivity {
 
         if (spin_uno >= 0) {
             Intent intent = new Intent(this, ScrollingActivity.class);
-            String message = spinner.getText().toString();
-            char valor = spinner.getText().charAt(0);
-            int num = Integer.valueOf(valor);
-            intent.putExtra(EXTRA_MESSAGE, num);
+            //String message = spinner.getText().toString();
+            String valor = String.valueOf(spinner.getText());
+            //int num = Integer.valueOf(valor);
+            intent.putExtra(EXTRA_MESSAGE, valor);
             startActivity(intent);
         } else {
 

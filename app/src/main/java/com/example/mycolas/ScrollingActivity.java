@@ -3,11 +3,14 @@ package com.example.mycolas;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -17,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ScrollingActivity extends AppCompatActivity {
     private TextView mJsonTxtView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +31,8 @@ public class ScrollingActivity extends AppCompatActivity {
         getPosts();
     }
 
-    // Metodo para obtener los campos
-    private void getPosts(){
+    // Metodo para obtener los campos del proveedor
+    private void getPosts() {
 
         Retrofit retrofit = new Retrofit.Builder()
                 // Establecemos la base URL para la API REST
@@ -42,42 +46,50 @@ public class ScrollingActivity extends AppCompatActivity {
         Call<List<Posts>> call = jsonApi.getPosts();
 
         call.enqueue(new Callback<List<Posts>>() {
+
+
             @Override
-            public void onResponse(@NonNull Call<List<Posts>> call,@NonNull Response<List<Posts>> response) {
+            public void onResponse(@NonNull Call<List<Posts>> call,
+                                   @NonNull Response<List<Posts>> response) {
 
                 // Condicion para que si no hay respuesta enviar mensaje de Error
-                if(!response.isSuccessful()){
-                    mJsonTxtView.setText("Codigo: "+response.code());
+                if (!response.isSuccessful()) {
+                    mJsonTxtView.setText("Codigo: " + response.code());
                     return;
                 }
-
                 List<Posts> postsList = response.body();
                 Intent intent = getIntent();
                 String message = intent.getStringExtra(InsertActivity.EXTRA_MESSAGE);
-                mJsonTxtView.append("Número de Prioridad cola introducido: "+message+"\n"+"" +
+                mJsonTxtView.append("Número de Prioridad cola introducido: " +
+                        message + "\n" + "" +
                         "-------------------------------------\n");
                 //pasar valor string a int para poder comparar num introducido
                 int mes = Integer.parseInt(message);
 
                 // Bucle para pintar los campos en el textView
-                for(@Nullable Posts post: postsList){
+                for (@Nullable Posts post : postsList) {
                     String content = "";
-                    content += "userId:"+ post.getUserId() + "\n";
-                    content += "id:"+ post.getId() +
-                            "\n"+"----------------------------------------"+"\n";
+                    content += "userId:" + post.getUserId() + "\n";
+                    content += "id:" + post.getId() +
+                            "\n" + "----------------------------------------" + "\n";
 
                     //Mas campos de la BBDD o servidor
                     //content += "title:"+ post.getTitle() + "\n";
                     //content += "body:"+ post.getBody() + "\n\n";
-                    if (mes == post.getUserId()){
-                    mJsonTxtView.append(content);}
+                    if (mes == post.getUserId()) {
+                        mJsonTxtView.append(content);
+                    } else {
+
+
+                    }
 
                 }
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<Posts>> call,@NonNull Throwable t) {
+            public void onFailure(@NonNull Call<List<Posts>> call, @NonNull Throwable t) {
                 mJsonTxtView.setText(t.getMessage());
+
 
             }
         });
