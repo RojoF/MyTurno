@@ -6,5 +6,5 @@ La app coje los datos como un cliente REST, tipo de conexion RETROFIT
 
 By: @SpecialistaRojo
 
-
+![](video.gif)
 
